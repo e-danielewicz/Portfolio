@@ -108,9 +108,22 @@
 							</div>
 							<div class="col-12a">
 								<header>
-									<h3>I am continuously working on projects in my spare time. In the meantime, check out some of my GIS work below.<br> <br> <br> </h3>  
+									<!-- Removed <br> tags, handled spacing via inline margin style instead -->
+									<h3 style="margin-bottom: 2rem;">
+										I am continuously working on projects in my spare time. In the meantime, check out some of my GIS work below.
+									</h3>  
 
-									<iframe width="100%" height="800px" src="https://www.arcgis.com/apps/mapviewer/index.html?webmap=47b046801fda4d20a706d95a469359f7" frameborder="0" scrolling="yes"></iframe>
+									<!-- Added a wrapper div with a fixed minimum height to stop layout shifting -->
+									<div style="min-height: 800px; width: 100%; display: block; background: #f4f4f4;">
+										<iframe 
+											width="100%" 
+											height="800px" 
+											src="https://www.arcgis.com/apps/mapviewer/index.html?webmap=47b046801fda4d20a706d95a469359f7" 
+											frameborder="0" 
+											scrolling="yes"
+											loading="lazy">
+										</iframe>
+									</div>
 								</header>
 							</div>
 						</div>
